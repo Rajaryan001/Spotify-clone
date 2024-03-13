@@ -1,0 +1,284 @@
+body{
+  font-family: "Sora", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+    
+}
+.sidebar{
+    background-color: black;
+    width: 20.25rem;
+    border-radius: 1rem; /*16px*/
+    margin-right: 0.5rem;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.library{
+    background: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons{
+    opacity: 07;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: #242424;
+    border-radius: 1rem;
+    height: 9rem;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0.5rem 1rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.75;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+    cursor: pointer;
+}
+.dark-badge{
+    background-color: black;
+    color: #fff;
+
+}
+.sticky-nav{
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+}
+.nav-icons-iconx{
+    margin-left: 0.75rem;
+}
+.sticky-nav-optins{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-items{
+    margin-right: 1.5rem;
+}
+
+
+/*------------------ cards-----------------*/
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem; /*16px*/
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.card{
+    background-color: #181818;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+
+.footer{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90vh;
+    height: 50%;
+    opacity: 0.4;
+    border-top: 1px solid white;
+}
+
+
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album {
+    width: 25%;
+    display: flex;
+    margin-left: 1rem;
+    /* background-color: #f2f2f2; Light gray background */
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Shadow effect */
+}
+
+.album-img {
+    margin-right: 0.5rem; /* Add some space between the image and text */
+}
+
+.album-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.5rem;
+    object-fit: cover; /* Ensure the image fills the container */
+}
+
+.album-title {
+    font-size: 1rem;
+    margin: 0; /* Remove default margin */
+    font-weight: bold; /* Make the title bold */
+    color: #cabbbb; /* Dark text color */
+}
+
+.album-singer {
+    font-size: 0.8rem; /* Increase the font size */
+    margin: 0; /* Remove default margin */
+    color: #666; /* Lighter text color */
+}
+
+.album-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem
+}
+
+.album-icons i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color: #aea5a5; /* Light gray color for icons */
+}
+
+.album-icons i:hover {
+    cursor: pointer;
+    color: #ff0000; /* Change color on hover (e.g., red for like) */
+}
+
+.player{
+    width: 50%;
+}
+.player-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player-control-icon{
+    height: 1rem;  
+    margin-right: 2rem;
+    opacity: 0.7;
+}
+.controls{
+    width: 25%;
+}
+.playback-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
